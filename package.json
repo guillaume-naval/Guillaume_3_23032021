@@ -1,0 +1,19 @@
+{
+  "name": "p3_ohmyfood_guillaume_naval",
+  "version": "1.0.0",
+  "description": "P3_Ohmyfood_guillaume_naval",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillaume-naval/P3_Ohmyfood_guillaume_naval.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guillaume-naval/P3_Ohmyfood_guillaume_naval/issues"
+  },
+  "homepage": "https://github.com/guillaume-naval/P3_Ohmyfood_guillaume_naval#readme"
+}

@@ -1,0 +1,40 @@
+.stages{
+    height:12em;
+    padding:2rem;
+    margin-bottom: 3rem;
+}
+.steps{
+    display:flex;
+    align-items:center;
+    background: $colour-lightgrey;
+    margin-top:1.5rem;
+    border-radius: 1rem;
+    padding: 1.5rem 0rem 1.5rem 0rem;
+    box-shadow: 0 0.2rem 0.8rem 0 rgb(0 0 0 / 20%);
+    transition: 0.5s;
+    & i{
+        color:grey;
+        margin:0rem 1.5rem 0rem 0.5rem;
+    }
+    &:hover{
+        background: #9256dc27;
+        & i{
+            color:$colour-primary;
+        }
+    }
+}
+.number{
+    background: $colour-primary;
+    color: $colour-white;
+    position: relative;
+    right:0.8rem;
+    font-weight: 100;
+    font-size: 1rem;
+    border-radius: 100%;
+    padding:0.2rem 0.5rem 0.2rem 0.5rem;
+}
+.restaurants{
+    background: $colour-lightgrey;
+    height:12em;
+    padding:2rem;
+}
