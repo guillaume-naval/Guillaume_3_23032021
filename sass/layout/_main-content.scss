@@ -33,8 +33,37 @@
     border-radius: 100%;
     padding:0.2rem 0.5rem 0.2rem 0.5rem;
 }
-.restaurants{
+.restaurant{
     background: $colour-lightgrey;
+    display: flex;
+    flex-direction: column;
     height:12em;
     padding:2rem;
+    &__card{
+        background: white;
+        margin-top:1rem;
+        height:15rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        & img{
+            max-height:10rem;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content{
+        display: flex;
+        padding: 0.5rem 2rem 0rem 1rem;
+        justify-content: space-between;
+        background: white;
+        line-height: 1.5rem;
+        & i{
+            margin-top:0.5rem;
+            font-size: 1.5rem;
+            &:hover{
+                color: yellow;
+            }
+        }
+        
+    }
 }

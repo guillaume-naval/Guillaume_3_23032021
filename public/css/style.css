@@ -59,9 +59,9 @@ button {
   font-weight: 600;
 }
 
-.txt-thin {
+.txt--thin {
   font-weight: 100;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .btn {
@@ -166,10 +166,38 @@ button {
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
 }
 
-.restaurants {
+.restaurant {
   background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
   height: 12em;
   padding: 2rem;
+}
+.restaurant__card {
+  background: white;
+  margin-top: 1rem;
+  height: 15rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.restaurant__card img {
+  max-height: 10rem;
+  width: 100%;
+  object-fit: cover;
+}
+.restaurant__content {
+  display: flex;
+  padding: 0.5rem 2rem 0rem 1rem;
+  justify-content: space-between;
+  background: white;
+  line-height: 1.5rem;
+}
+.restaurant__content i {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+.restaurant__content i:hover {
+  color: yellow;
 }
 
 .container {
