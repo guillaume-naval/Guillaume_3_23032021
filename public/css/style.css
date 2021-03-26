@@ -170,18 +170,20 @@ button {
   background: #f6f6f6;
   display: flex;
   flex-direction: column;
-  height: 12em;
+  height: 100%;
   padding: 2rem;
 }
 .restaurant__card {
   background: white;
   margin-top: 1rem;
-  height: 15rem;
+  height: 18rem;
   border-radius: 1rem;
   overflow: hidden;
+  box-shadow: 0 0.2rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 .restaurant__card img {
-  max-height: 10rem;
+  max-height: 13rem;
   width: 100%;
   object-fit: cover;
 }
@@ -194,10 +196,28 @@ button {
 }
 .restaurant__content i {
   margin-top: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  overflow: visible;
 }
-.restaurant__content i:hover {
-  color: yellow;
+
+.icon-heart {
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+
+.full {
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: transform 0.5s ease, opacity 0.8s ease;
+  position: absolute;
+  opacity: 0;
+}
+.full:hover {
+  transform: scale(1.05);
+  opacity: 1;
 }
 
 .container {

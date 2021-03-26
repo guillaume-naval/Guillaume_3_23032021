@@ -37,16 +37,19 @@
     background: $colour-lightgrey;
     display: flex;
     flex-direction: column;
-    height:12em;
+    height:100%;
     padding:2rem;
+   
     &__card{
         background: white;
         margin-top:1rem;
-        height:15rem;
+        height:18rem;
         border-radius: 1rem;
         overflow: hidden;
+        box-shadow: 0 0.2rem 0.8rem 0 rgb(0 0 0 / 20%);
+        cursor:pointer;
         & img{
-            max-height:10rem;
+            max-height:13rem;
             width: 100%;
             object-fit: cover;
         }
@@ -59,11 +62,29 @@
         line-height: 1.5rem;
         & i{
             margin-top:0.5rem;
-            font-size: 1.5rem;
-            &:hover{
-                color: yellow;
-            }
+            font-size: 1.7rem;
+            overflow:visible;
         }
         
     }
+}
+.icon-heart{
+    display:flex;
+    justify-content: center;
+    overflow:visible;
+}
+.full{
+    background: -webkit-linear-gradient($colour-primary,$colour-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:text;
+    transition:transform 0.5s ease,opacity 0.8s ease;
+    position: absolute;
+    opacity: 0.0;
+    
+    &:hover{
+        transform: scale(1.05);
+        opacity:1;
+    }
+    
 }
