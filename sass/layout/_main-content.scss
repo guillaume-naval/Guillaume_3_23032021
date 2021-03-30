@@ -1,7 +1,15 @@
 .stages{
-    height:12em;
+    flex-wrap: wrap;
+    height:100%;
     padding:2rem;
     margin-bottom: 3rem;
+    @include tablet-only{
+        display:flex;
+        flex-direction: row;
+        h2{
+            margin-bottom:1em;
+        }
+    }   
 }
 .steps{
     display:flex;
@@ -9,7 +17,7 @@
     background: $colour-lightgrey;
     margin-top:1.5rem;
     border-radius: 1rem;
-    padding: 1.5rem 0rem 1.5rem 0rem;
+    padding: 1.5rem 1rem 1.5rem 0rem;
     box-shadow: 0 0.2rem 0.8rem 0 rgb(0 0 0 / 20%);
     transition: 0.5s;
     & i{
@@ -22,6 +30,12 @@
             color:$colour-primary;
         }
     }
+    @include tablet-only{
+        margin:0 3% 0 0;
+        width:30%;
+        height:5em;
+    }  
+    
 }
 .number{
     background: $colour-primary;
@@ -38,12 +52,11 @@
     display: flex;
     flex-direction: column;
     height:100%;
-    padding:2rem;
-   
+    padding:2rem; 
     &__card{
         background: white;
         margin-top:1rem;
-        height:18rem;
+        height:10%;
         border-radius: 1rem;
         overflow: hidden;
         box-shadow: 0 0.2rem 0.8rem 0 rgb(0 0 0 / 20%);
@@ -52,11 +65,11 @@
             max-height:13rem;
             width: 100%;
             object-fit: cover;
-        }
+        }  
     }
     &__content{
         display: flex;
-        padding: 0.5rem 2rem 0rem 1rem;
+        padding: 0.5rem 2rem 1rem 1rem;
         justify-content: space-between;
         background: white;
         line-height: 1.5rem;
@@ -65,26 +78,33 @@
             font-size: 1.7rem;
             overflow:visible;
         }
-        
     }
+    @include laptop-only{ 
+        flex-direction: row;
+        flex-wrap: wrap;
+        & h2{
+            flex-basis:100%;
+        }
+        &__card{
+            width:48%;
+            margin:1rem 1rem 0rem 0rem;
+        }
+    } 
 }
 .icon-heart{
     display:flex;
     justify-content: center;
-    overflow:visible;
+    overflow:visible; 
 }
 .full{
     background: -webkit-linear-gradient($colour-primary,$colour-secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip:text;
-    transition:transform 0.5s ease,opacity 0.8s ease;
+    transition:transform 0.3s ease-in-out;
     position: absolute;
-    opacity: 0.0;
-    
-    &:hover{
-        transform: scale(1.05);
-        opacity:1;
-    }
-    
+    transform: scale(0);
+}
+.regular:hover ~ .full{
+    transform: scale(0.9);
 }

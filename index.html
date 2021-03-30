@@ -20,7 +20,7 @@
 
             <!-- Logo -->
             <div class="header__logo">
-                <a href="index.html"><img src="public/img/logo/ohmyfood@2x.svg" alt="logo Ohmyfood"/></a>
+                <a href="index.html"><img class="logo" src="public/img/logo/ohmyfood@2x.svg" alt="logo Ohmyfood"/></a>
             </div>
 
             <!-- Adress -->
@@ -42,6 +42,7 @@
             <!-- Stages -->
             <section class="stages">
                 <h2>Fonctionnement</h2>
+                <div class="break"></div>
                 <div class="steps">
                     <div class="number">1</div>
                     <i class="fas fa-mobile-alt"></i>
@@ -53,7 +54,7 @@
                     <p>Composez votre menu</p>
                 </div>
                 <div class="steps">
-                    <div class="number">3</div>
+                    <div class="number" aria-hidden="true">3</div>
                     <i class="fas fa-store"></i>
                     <p>Dégustez au restaurant</p>
                 </div>
@@ -61,21 +62,25 @@
             <!-- Restaurants Menus -->
             <section class="restaurant">
                 <h2>Restaurants</h2>
+                
                 <article class="restaurant__card">
-                    <div class="restaurant__img">
-                        <img src="public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût"/>
-                    </div>
-                    <div class="restaurant__content">
-                        <div class="restaurant__text">
-                            <p>La palette du goût</p>
-                            <p class="txt--thin">Ménilmontant</p>
+                    <a href="menu__palette.html">
+                        <div class="restaurant__img">
+                            <img src="public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût"/>
                         </div>
-                        <div class="icon-heart">
-                            <i class="far fa-heart regular"></i>
-                            <i class="fas fa-heart full"></i>
-                        </div>
-                    </div>   
-                </article>
+                        <div class="restaurant__content">
+                            <div class="restaurant__text">
+                                <p>La palette du goût</p>
+                                <p class="txt--thin">Ménilmontant</p>
+                            </div>
+                            <div class="icon-heart">
+                                <i class="far fa-heart regular"></i>
+                                <i class="fas fa-heart full"></i>
+                            </div>
+                        </div>   
+                    </a>
+                 </article>
+                
                 <article class="restaurant__card">
                     <div class="restaurant__img">
                         <img src="public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>

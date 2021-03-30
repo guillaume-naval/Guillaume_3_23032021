@@ -6,6 +6,7 @@ body {
 }
 .title {
     font-family: 'Shrikhand', sans-serif;
+    font-weight: 100;
     color:black;
 }
 h1 {
@@ -16,7 +17,14 @@ h1 {
 }
 h2{
     font-weight:900;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size: 0.9rem;
+    border-bottom: 0.2rem solid $colour-tertiary;
+    margin-top:2rem;
 }
 p {
     font-family: 'Roboto', sans-serif;

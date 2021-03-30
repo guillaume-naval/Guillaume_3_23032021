@@ -19,3 +19,24 @@
         margin: 0 auto;
     }
 }
+
+$breakpoints: (
+    tablet:768px,
+    laptop:1025px,
+    desktop:1200px
+);
+@mixin tablet-only{
+    @media screen and (min-width:map-get($breakpoints,tablet)) {
+        @content;
+    }
+}
+@mixin laptop-only{
+    @media screen and (min-width: map-get($breakpoints,laptop)){
+        @content;
+    }
+}
+@mixin desktop-only{
+    @media screen and (min-width: map-get($breakpoints,desktop)){
+        @content;
+    }
+}
