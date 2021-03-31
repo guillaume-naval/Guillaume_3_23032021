@@ -1,0 +1,19 @@
+.starters div{
+    opacity: 0;
+    animation: fadein 2s forwards;
+}
+
+@keyframes fadein {
+    100% {                     
+      opacity: 1;
+    }
+}
+.starters:nth-child(1) { 
+    animation-delay: 0s; 
+}
+.starters:nth-child(2) { 
+    animation-delay: 0.5s; 
+}
+.starters:nth-child(3) { 
+    animation-delay: 1.5s; 
+}

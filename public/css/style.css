@@ -1,3 +1,25 @@
+.starters div {
+  opacity: 0;
+  animation: fadein 2s forwards;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+.starters:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.starters:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.starters:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
 *,
 *::after,
 *::before {
@@ -339,7 +361,7 @@ button {
   background: white;
   box-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.164);
   margin-top: 0.5rem;
-  min-width: 0;
+  overflow: hidden;
 }
 .dish__txt {
   display: flex;
@@ -349,6 +371,7 @@ button {
   padding: 1rem;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 .dish__txt :not(.dish__name) {
   font-size: 0.8rem;
@@ -371,6 +394,7 @@ button {
 }
 
 .checkbox {
+  display: flex;
   position: absolute;
   width: 1;
   height: 1;
@@ -378,8 +402,7 @@ button {
 
 .dish__checked {
   display: flex;
-  width: 35%;
-  overflow: hidden;
+  width: 30%;
 }
 
 .check--green {
@@ -391,7 +414,6 @@ button {
   width: 100%;
   background: #99E2D0;
   border-radius: 0 0.8rem 0.8rem 0;
-  overflow: hidden;
 }
 
 .fa-check-circle {
