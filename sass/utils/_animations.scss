@@ -1,6 +1,14 @@
 .starters div{
     opacity: 0;
-    animation: fadein 2s forwards;
+    animation: fadein 1s forwards,downup 1s forwards;
+}
+.maincourse div{
+    opacity: 0;
+    animation: fadein 1s forwards,downup 1s forwards;
+}
+.dessert div{
+    opacity: 0;
+    animation: fadein 1s forwards,downup 1s forwards;
 }
 
 @keyframes fadein {
@@ -8,12 +16,33 @@
       opacity: 1;
     }
 }
+@keyframes fadeout {
+    100% {                     
+      opacity: 0;
+    }
+}
+
+@keyframes downup {
+    0%{
+        transform: translateY(1rem);
+    }
+    
+    100% {                     
+        transform: translateY(0);
+    }
+}
 .dish:nth-child(1) { 
     animation-delay: 0s; 
 }
 .dish:nth-child(2) { 
-    animation-delay: 0.5s; 
+    animation-delay: 0.3s; 
 }
 .dish:nth-child(3) { 
-    animation-delay: 1.5s; 
+    animation-delay: 0.6s; 
+}
+.dish:nth-child(4) { 
+    animation-delay: 0.9s; 
+}
+.dish:nth-child(5) { 
+    animation-delay: 1.2s; 
 }

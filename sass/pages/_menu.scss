@@ -39,19 +39,22 @@
     box-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.164);
     margin-top: 0.5rem;
     overflow: hidden;
+    cursor: pointer;
     &__txt{
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        min-width: 10%;
+        margin-left:0.5rem;
         & :not(.dish__name){
             font-size: 0.8rem;
         }
         & p{
-            min-width:0;
             text-overflow: ellipsis; 
             white-space: nowrap;
             overflow: hidden;
+            width: 100%;
         }
     }
     &__name{
@@ -60,6 +63,7 @@
     &__price{
         font-size: 0.8rem;
         margin:1.2rem 1rem 0rem 0rem;
+        width: 10%;
     }
     &__type{
         width:2rem;

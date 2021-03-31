@@ -105,6 +105,12 @@
     position: absolute;
     transform: scale(0);
 }
-.regular:hover ~ .full{
-    transform: scale(1.15);
+.regular{
+    opacity:1;
+}
+.icon-heart:hover > .full{
+    transform: scale(1.0);
+}
+.icon-heart:hover > .regular{
+    animation: fadeout 1s forwards;
 }
