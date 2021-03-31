@@ -35,37 +35,68 @@
     width:100%;
     height:3.6rem;
     border-radius: 0.8rem;
-    padding: 0.5rem;
     background: white;
     box-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.164);
     margin-top: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
     &__txt{
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
-        height: 1.2em;
-        /*text-overflow: ellipsis; 
-        white-space: nowrap;
-        overflow: hidden; */
+        min-width: 10%;
+        margin-left:0.5rem;
         & :not(.dish__name){
             font-size: 0.8rem;
+        }
+        & p{
+            text-overflow: ellipsis; 
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
         }
     }
     &__name{
         font-size: 1rem;
     }
     &__price{
-        margin-right:1rem;
+        font-size: 0.8rem;
+        margin:1.2rem 1rem 0rem 0rem;
+        width: 10%;
     }
     &__type{
         width:2rem;
     }
-    
 }
 .commander{
     width: 12rem;
     align-self: center;
     margin-bottom:1rem;
+}
+.check--green {
+    display:flex;
+    width:0%;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0,1);
+    transform-origin: 100% 0%;
+    background:$colour-tertiary;
+    border-radius: 0 0.8rem 0.8rem 0;
+    transition: .5s all ease-in-out;
+}
+.fa-check-circle{
+    font-size: 1.5rem;
+    color:white;
+}
+.dish:hover{
+    & > .check--green {
+        transform: scale(1,1);
+        transition: .5s all ease-in-out;
+        width:20%;
+        & > .fa-check-circle{
+            transform: rotate(360deg);
+            transition: all .5s ease-in-out;
+            }
+    }
 }
