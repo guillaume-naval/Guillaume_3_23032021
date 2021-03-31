@@ -8,15 +8,15 @@
     opacity: 1;
   }
 }
-.starters:nth-child(1) {
+.dish:nth-child(1) {
   animation-delay: 0s;
 }
 
-.starters:nth-child(2) {
+.dish:nth-child(2) {
   animation-delay: 0.5s;
 }
 
-.starters:nth-child(3) {
+.dish:nth-child(3) {
   animation-delay: 1.5s;
 }
 
@@ -284,7 +284,7 @@ button {
 }
 
 .regular:hover ~ .full {
-  transform: scale(0.9);
+  transform: scale(1.15);
 }
 
 .container {
@@ -368,13 +368,15 @@ button {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 1rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .dish__txt :not(.dish__name) {
   font-size: 0.8rem;
+}
+.dish__txt p {
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .dish__name {
   font-size: 1rem;
@@ -393,27 +395,16 @@ button {
   margin-bottom: 1rem;
 }
 
-.checkbox {
-  display: flex;
-  position: absolute;
-  width: 1;
-  height: 1;
-}
-
-.dish__checked {
-  display: flex;
-  width: 30%;
-}
-
 .check--green {
   display: flex;
+  width: 0%;
   justify-content: center;
   align-items: center;
   transform: scale(0, 1);
   transform-origin: 100% 0%;
-  width: 100%;
   background: #99E2D0;
   border-radius: 0 0.8rem 0.8rem 0;
+  transition: 0.5s all ease-in-out;
 }
 
 .fa-check-circle {
@@ -421,13 +412,14 @@ button {
   color: white;
 }
 
-.dish__checkbox:checked ~ .check--green {
+.dish:hover > .check--green {
   transform: scale(1, 1);
-  transition: 0.5s all;
+  transition: 0.5s all ease-in-out;
+  width: 20%;
 }
-.dish__checkbox:checked ~ .check--green > .fa-check-circle {
+.dish:hover > .check--green > .fa-check-circle {
   transform: rotate(360deg);
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
