@@ -46,3 +46,10 @@
 .dish:nth-child(5) { 
     animation-delay: 1.2s; 
 }
+
+@keyframes hideloader {
+    to {
+        overflow:hidden;
+        opacity:0;
+    }
+}

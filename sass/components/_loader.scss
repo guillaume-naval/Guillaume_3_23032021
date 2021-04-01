@@ -1,0 +1,59 @@
+
+.loader{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.loader__wrap{
+    display:flex;
+    position: fixed;
+    justify-content: center;
+    align-items:center;
+    background: white;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    opacity:1;
+    animation: hideloader 0.2s ease-in-out 4s forwards;
+}
+.balls{
+    display:flex;
+}
+.balls > span{
+        position: relative;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        animation: bounce 0.5s alternate infinite ease;
+        margin-right:0.5rem;
+}
+.balls > span:nth-child(1) {
+    background-color:$colour-primary;
+    animation-delay:0s;
+}
+.balls > span:nth-child(2) {
+    background-color:$colour-secondary;
+    animation-delay:0.2s;
+}
+.balls > span:nth-child(3) {
+    background-color:$colour-tertiary;
+    animation-delay:0.4s;
+}
+
+@keyframes bounce {
+    0% {
+        top:2rem;
+        height:0.2rem;
+        border-radius: 60px 60px 20px 20px;
+        transform: scaleX(2);
+    }
+    35%{
+        height:1rem;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+    100% {
+        top: 0;
+      }
+}
