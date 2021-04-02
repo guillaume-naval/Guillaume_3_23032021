@@ -340,6 +340,7 @@ button {
   }
   .stages h2 {
     margin-bottom: 1em;
+    margin-left: 1.5rem;
   }
 }
 
@@ -365,7 +366,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .steps {
-    margin: 0 3% 0 0;
+    margin: 0 0 0 2.5%;
     width: 30%;
     height: 5em;
   }
@@ -422,10 +423,11 @@ button {
   }
   .restaurant h2 {
     flex-basis: 100%;
+    margin-left: 1rem;
   }
   .restaurant__card {
     width: 48%;
-    margin: 1rem 1rem 0rem 0rem;
+    margin: 1rem 0rem 0rem 1rem;
   }
 }
 
