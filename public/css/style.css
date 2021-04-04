@@ -391,6 +391,7 @@ button {
   padding: 2rem;
 }
 .restaurant__card {
+  position: relative;
   background: white;
   margin-top: 1rem;
   height: 10%;
@@ -431,6 +432,25 @@ button {
   }
 }
 
+.newtag::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "Nouveau";
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00a085;
+  position: absolute;
+  border-radius: 0.2rem;
+  height: 2rem;
+  width: 5.8rem;
+  top: 1rem;
+  right: 1rem;
+  box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.329);
+  background: #99E2D0;
+}
+
 .icon-heart {
   display: flex;
   justify-content: center;
@@ -457,11 +477,6 @@ button {
 
 .icon-heart:hover > .regular {
   animation: fadeout 1s forwards;
-}
-
-.container {
-  margin: 6rem;
-  padding: 1em;
 }
 
 .footer {
