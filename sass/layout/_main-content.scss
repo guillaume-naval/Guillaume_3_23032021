@@ -110,7 +110,7 @@
     width:5.8rem;
     top:1rem;
     right:1rem;
-    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.329);
+    box-shadow: 0.1rem 0.1rem 0.3rem 0rem rgba(0, 0, 0, 0.26);
     background:$colour-tertiary;
 }
 .icon-heart{
@@ -120,9 +120,11 @@
 }
 .full{
     background: -webkit-linear-gradient($colour-primary,$colour-secondary);
+    background: linear-gradient($colour-primary,$colour-secondary);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip:text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;    
     transition:transform 0.3s ease-in-out;
     position: absolute;
     transform: scale(0);

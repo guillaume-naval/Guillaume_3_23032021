@@ -201,6 +201,7 @@ button {
 .loader__title::before {
   content: "Oh my food";
   background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -210,6 +211,7 @@ button {
   animation: gradient-title 2.8s ease-in-out forwards;
   background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
 }
 
@@ -447,7 +449,7 @@ button {
   width: 5.8rem;
   top: 1rem;
   right: 1rem;
-  box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.329);
+  box-shadow: 0.1rem 0.1rem 0.3rem 0rem rgba(0, 0, 0, 0.26);
   background: #99E2D0;
 }
 
@@ -459,9 +461,11 @@ button {
 
 .full {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
   transition: transform 0.3s ease-in-out;
   position: absolute;
   transform: scale(0);

@@ -25,6 +25,7 @@
         &::before{
             content:"Oh my food";
             background: linear-gradient($colour-secondary,$colour-primary);
+            background: -webkit-linear-gradient($colour-secondary,$colour-primary);
             position:absolute;
             top:0;
             bottom:0;
@@ -34,6 +35,7 @@
             animation: gradient-title 2.8s ease-in-out forwards;
             background-clip:text;
             -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
             color:transparent;
         }
     }
